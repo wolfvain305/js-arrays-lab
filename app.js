@@ -76,3 +76,33 @@ foods.splice(1,1, 'sushi', 'cupcake')
 
 console.log('Exercise 6 result:', foods);
 
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
+*/
+
+const yummy = foods.splice(-4,2)
+
+console.log('Exercise 7 result:', yummy);
+
+/*
+Exercise 8: Finding an index
+
+1) Using the `indexOf()` method, find the index of the string 'tofu' in the 
+   `foods` array. 
+
+2) Assign it to a variable named `soyIdx`.
+
+Complete Exercise 8 in the space below:
+*/
+
+const soyIdx = foods.indexOf('tofu')
+
+
+console.log('Exercise 8 result:', soyIdx);
