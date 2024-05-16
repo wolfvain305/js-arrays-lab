@@ -187,14 +187,13 @@ const fizz = []
 const buzz = []
 const fizzbuzz = []
 for (let number of nums){
-   if (number % 3 === 0)
-   fizz.push(number)
-   else if (number % 5 === 0)
-   buzz.push(number)
-   else (number % 3 || 5 === 0)
-   fizzbuzz.push(number)
+   if (number % 3 === 0){
+   fizz.push(number)}
+   if (number % 5 === 0){
+   buzz.push(number)}
+   if (number % 3 === 0 && number % 5 === 0){
+   fizzbuzz.push(number)}
 }
-
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
@@ -259,5 +258,6 @@ Complete Exercise 15 in the space below:
        total += numArrays[i][j];
    }
 }
+
 
 console.log('Exercise 15 result:\n', total);
